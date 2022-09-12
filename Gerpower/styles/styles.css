@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegador{
+    text-align: center;
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    justify-content: center;
+    background-color: #16a861e8;
+
+}
+.navegador li{
+    justify-content: center;
+    top: -70px;
+    background-color: none;    
+    display: inline;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
+    height: fit-content;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+
+body{
+    background-image: url("../imagenes/609.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    max-width: 1200px;
+    color: white;
+    background-color: #02191d;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: 
+       "none footerSrl none"
+       "copyright";
+
+}
+
+.footerSrl{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    grid-area: footerSrl;
+}
+
+.copyright{
+    font-size: 11px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-area: copyright;
+
+}
+
+.redesSociales{
+display: flex;
+justify-content: flex-end;
+position: relative;
+top: -140px;
+}
+
+#iconoRedes1{
+    max-width: 25px;
+    max-height: 25px;
+    border: solid;
+    border-color: #0a3e498d;
+    background-color:white;
+    padding: 5px;
+    border-radius: 200px;
+}
+#iconoRedes2{
+    max-width: 25px;
+    max-height: 25px;
+    border: solid;
+    border-color: #0a3e498d;
+    background-color:white;
+    padding: 5px;
+    border-radius: 200px;
+}
+#iconoRedes3{
+    max-width: 25px;
+    max-height: 25px;
+    border: solid;
+    border-color: #0a3e498d;
+    background-color:white;
+    padding: 5px;
+    border-radius: 200px;
+}
+
+h3{
+    display: flex;
+    justify-content: right;
+    color: white;  
+    padding: 5px;
+    margin-top: -40px;
+    margin-right: 650px;
+}
+
+h1 {
+    border:15px;
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;  
+    padding: 20px;
+}
+
+form {
+    margin: 10px;
+    background-color: #0a3e498b;
+    width: 600px;
+    border-color: blueviolet;
+    border-radius: 100px;
+    position: relative;
+    left: 300px;
+    text-align: center;
+    color: whitesmoke;  
+    padding: 20px;
+}
+.button{
+    border: #02191d;
+    border-radius: 20px;
+    background-color: #0a3e49;
+
+}
+
+textarea{
+    width: 350px;
+    height: 100px;
+}
+.imagen__titulo{
+    display: inline flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    padding-bottom:  40px;
+    max-width: 700px;
+}
+
+
+header {
+    max-width: 1200px;
+    background-color: #0a3e49d1;
+}
+
+
+.mainservicios{
+    max-width: 1200px;
+    margin: 10px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 5, 1fr;
+    grid-template-areas: 
+    "serv serv none none"
+    "servitext servitext imagenservicios imagenservicios"
+    "servitext servitext imagenservicios imagenservicios";
+}
+
+.serv{
+    grid-area: serv;
+    color: whitesmoke;  
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.servitext{
+    max-width: 100%;
+    margin: 100px;
+    grid-area: servitext;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.imagenservicios{
+    grid-area: imagenservicios;
+    max-width: 730px;
+    color: white;  
+    background-color: #0a3e49;
+    border-radius: 15px;
+    border: white solid;    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "im1 im2"
+    "im3 im4"
+}
+.im1{
+    grid-area: im1;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;  
+    border-radius: 15px;
+}
+.im2{
+    grid-area: im2;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.im3{
+    grid-area: im3;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;   
+    border-radius: 15px;
+}
+.im4{
+    grid-area: im4;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+
+.maingrid{
+    max-width: 1200px;
+    max-height: auto;
+    background-color: rgba(245, 245, 245, 0.307);
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    object-fit: contain;
+    padding: 30px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 2, 1fr;
+    grid-template-areas: 
+    "imagen1 imagen2"
+    "imagen3 imagen4"
+}
+
+.imagenPagPpal1{
+    grid-area: imagen1;
+    max-width: 500px;
+    max-height: 450px;
+}
+.imagenPagPpal2{
+    grid-area: imagen2;
+    max-width: 500px;
+    max-height: 450px;
+   
+}
+.imagenPagPpal3{
+    grid-area: imagen3;
+   max-width: 550px;
+    max-height: 400px;
+  
+}
+.imagenPagPpal4{
+    grid-area: imagen4;
+    max-width: 500px;
+    max-height: 405px;
+  
+}
+
+.wsp{
+    position: fixed;
+    top: 270px;
+    left: 1145px;    
+}
+.wspImg{
+    border-radius: 18px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media screen and (max-widht: 320px)
+{
+
+}
