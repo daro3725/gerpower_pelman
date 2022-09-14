@@ -7,24 +7,21 @@
 .navegador{
     text-align: center;
     display:flex;
-    flex-flow: row wrap;
-    max-width: 1200px;
+    max-width: auto;
     justify-content: center;
     background-color: #16a861e8;
-
 }
+
 .navegador li{
     justify-content: center;
-    top: -70px;
     background-color: none;    
     display: inline;
     flex-wrap: wrap;
     text-align: center;
     border-radius: 10px;
-    width: 80px;
-    height: fit-content;
+    width: auto;
+    height: auto;
     padding: 5px;
-    margin-left: 30px;
 }
 
 .link{
@@ -32,7 +29,7 @@
     color: white;
     font-weight: 700;
     font-size: 20px;
-    display: inline;
+    display: inline-flex;
     flex-wrap: wrap;
 }
 
@@ -78,12 +75,12 @@ body{
 display: flex;
 justify-content: flex-end;
 position: relative;
-top: -140px;
+top: -50px;
 }
 
 #iconoRedes1{
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
     border: solid;
     border-color: #0a3e498d;
     background-color:white;
@@ -91,8 +88,8 @@ top: -140px;
     border-radius: 200px;
 }
 #iconoRedes2{
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
     border: solid;
     border-color: #0a3e498d;
     background-color:white;
@@ -100,8 +97,8 @@ top: -140px;
     border-radius: 200px;
 }
 #iconoRedes3{
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
     border: solid;
     border-color: #0a3e498d;
     background-color:white;
@@ -109,13 +106,14 @@ top: -140px;
     border-radius: 200px;
 }
 
-h3{
-    display: flex;
-    justify-content: right;
+h3 {
+    display: inline-flex;
+    position: relative;
+    top: -40px;
+    justify-content: center;
     color: white;  
-    padding: 5px;
-    margin-top: -40px;
-    margin-right: 650px;
+    padding: 10px;
+
 }
 
 h1 {
@@ -149,6 +147,7 @@ textarea{
     width: 350px;
     height: 100px;
 }
+
 .imagen__titulo{
     display: inline flex;
     flex-flow: row wrap;
@@ -157,16 +156,15 @@ textarea{
     padding-bottom:  40px;
     max-width: 700px;
 }
+
 .imagen__titulo:hover{
     transform: scale(1);
 }
-
 
 header {
     max-width: 1200px;
     background-color: #0a3e49d1;
 }
-
 
 .mainservicios{
     max-width: 1200px;
@@ -250,7 +248,6 @@ header {
     background-color: rgba(245, 245, 245, 0.307);
     justify-content: center;
     align-content: center;
-    margin: 10px;
     object-fit: contain;
     padding: 30px;
     display: grid;
@@ -288,13 +285,13 @@ header {
 
 .wsp{
     position: fixed;
-    top: 270px;
-    left: 1145px;    
+    top: 300px;
+    right: 0px;    
 }
 .wspImg{
     border-radius: 18px;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 65px;
+    max-height: 65px;
 }
 
 @media screen and (max-widht: 320px)

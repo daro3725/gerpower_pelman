@@ -6,48 +6,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Gerpower</title>
 </head>
 
 
 <body>
-    <header class="headerpag">
-        <section Class="logoytxt">
-         <img class="imagen__titulo" src="imagenes/GERPOWER LOGO.png" alt="logo de la pagina">
+    <header>
+        <div class="imagen__titulo"> <img src="../imagenes/GERPOWER LOGO.png" alt="logo de la pagina" width="600px" height="100px"> </div>
         <h3>Venta - Instalación - Mantenimiento de UPS</h3>
-        </section>
 
         <div class="redesSociales">
             <a href="https://www.linkedin.com/company/gerpowersrl/about/" target="_blank"> <img id="iconoRedes1" src="imagenes/linkedin.png" alt="imagen linkedin" ></a>
             <a  href="https://www.facebook.com/gerpowersrl" target="_blank"> <img id="iconoRedes2" src="imagenes/facebook.png" alt="imagen Facebook"></a>
             <a href="https://www.instagram.com/gerpowersrl" target="_blank"> <img id="iconoRedes3" src="imagenes/instagram2.png" alt="imagen Instagram"></a>
         </div>
-        <nav>
-            <div class="navegador">
-                <ul>
-                    <li><a class="link" href="index.html">Inicio </a></li>
-                    <li><a class="link" href="pages/productos.html">Productos </a></li>
-                    <li><a class="link" href="pages/servicios.html">Servicios </a></li>
-                    <li><a class="link" href="pages/clientes.html">Clientes </a></li>
-                    <li><a class="link" href="pages/contacto.html">Contacto </a></li>
-                </ul>        
+
+        <nav class="navbar navbar-expand-lg position-absolute top 0 start-50 translate-middle">
+            <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navegador">
+                        <li class="nav-item">
+                            <a class="link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="pages/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
     </header>
     
     <main class="maingrid">
-        <picture class="imagenPagPpal1">
-            <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.14 PM (1).jpeg" alt="foto principal1" width="100%" height="100%">
-        </picture>
-        <picture class="imagenPagPpal2">
-            <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.13 PM (1).jpeg" alt="foto principal2" width="100%" height="100%" >
-        </picture>
-        <picture class="imagenPagPpal3">
-            <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.13 PM (2).jpeg" alt="foto principal3" width="100%" height="100%" >
-        </picture>
-        <picture class="imagenPagPpal4">
-            <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.14 PM (2).jpeg" alt="foto principal4" width="100%" height="100%">
-        </picture>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.14 PM (1).jpeg" class="d-block w-100" alt="foto principal1" height="800px">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.13 PM (1).jpeg" class="d-block w-100" alt="foto principal2" height="800px">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.13 PM (2).jpeg" class="d-block w-100" alt="foto principal3" height="800px">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.14 PM (2).jpeg" class="d-block w-100" alt="foto principal4" height="800px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
     <article class="wsp">
@@ -70,8 +99,7 @@
             <p class="copyright">Copyright © Gerpower 2022. Todos los derechos reservados</p>
         </footer>
     </div>    
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
