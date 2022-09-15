@@ -117,6 +117,9 @@ h3 {
 }
 
 h1 {
+    display: flex;
+    position: center;
+    top: 0px;
     border:15px;
     text-align: center;
     justify-content: center;
@@ -124,18 +127,15 @@ h1 {
     padding: 20px;
 }
 
-form {
-    margin: 10px;
+.cardForm {
     background-color: #0a3e498b;
     width: 600px;
-    border-color: blueviolet;
     border-radius: 100px;
-    position: relative;
-    left: 300px;
     text-align: center;
-    color: whitesmoke;  
-    padding: 20px;
+    color:white;  
+    padding: 10px;
 }
+
 .button{
     border: #02191d;
     border-radius: 20px;

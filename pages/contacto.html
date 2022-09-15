@@ -19,15 +19,31 @@
             <a  href="https://www.facebook.com/gerpowersrl" target="_blank"> <img id="iconoRedes2" src="../imagenes/facebook.png" alt="imagen Facebook"></a>
             <a href="https://www.instagram.com/gerpowersrl" target="_blank"> <img id="iconoRedes3" src="../imagenes/instagram2.png" alt="imagen Instagram"></a>
         </div>
-        <nav>
-            <div class="navegador">
-                <ul>
-                    <li><a class="link" href="../index.html">Inicio </a></li>
-                    <li><a class="link" href="./productos.html">Productos </a></li>
-                    <li><a class="link" href="./servicios.html">Servicios </a></li>
-                    <li><a class="link" href="./clientes.html">Clientes </a></li>
-                    <li><a class="link" href="./contacto.html">Contacto </a></li>
-                </ul>        
+        
+        <nav class="navbar navbar-expand-lg position-absolute top 0 start-50 translate-middle">
+            <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navegador">
+                        <li class="nav-item">
+                            <a class="link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="../pages/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -36,56 +52,63 @@
         <a href="https://api.whatsapp.com/send?phone=1154195484" target="_blank"> <img class="wspImg" src="../imagenes/78f046b172a7b5e17190fc148201faaa.jpeg" alt="imagen wsp"></a>
     </article>
  
-    <div>
+    <div class="cardForm container-fluid" style="width:400px">
+
         <h1>Dejanos tus datos</h1>
-            </html>
             
-            <form>
-            <label for="nombre">Nombre</label>
-            <input type="Text" name="nombre" placeholder="Ingresa tu nombre">
-            <br><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Ingresa tu email">
-            <br><br>
-            <label for="telefono">Telefono</label>
-            <input type="telefono" name="telefono" placeholder="Ingresa tu telefono">
-            <br><br>
-            <label for="localidad">Localidad</label>
-            <select>
-                <option>Buenos Aires</option>
-                <option>Catamarca</option>
-                <option>Chaco</option>
-                <option>Chubut</option>
-                <option>Cordoba</option>
-                <option>Corrientes</option>
-                <option>Entre Rios</option>
-                <option>Formosa</option>
-                <option>Jujuy</option>
-                <option>La Pampa</option>
-                <option>La Rioja</option>
-                <option>Mendoza</option>
-                <option>Misiones</option>
-                <option>Neuquen</option>
-                <option>Rio Negro</option>
-                <option>Salta</option>
-                <option>San Juan</option>
-                <option>San Luis</option>
-                <option>Santa Cruz</option>
-                <option>Santa Fe</option>
-                <option>Santiago del Estero</option>
-                <option>Tierra del Fuego</option>
-                <option>Tucuman</option>
-            </select>
-            <br><br>
-            <label for="consulta">Consulta</label>
-            <br><br>
-            <textarea></textarea>
-            <br>
-            <section >
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@e-mail.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"> Telefono </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="011-XXXX-XXXX">
+              </div>
+
+              <label for="exampleDataList" class="form-label"> Provincia</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Seleccione su Provincia">
+                <datalist id="datalistOptions">
+                    <option value="Buenos Aires">
+                    <option value="Ciudad Autonoma de Buenos Aires">
+                    <option value="Catamarca">
+                    <option value="Chaco">
+                    <option value="Chubut">
+                    <option value="Cordoba">
+                    <option value="Corrientes">
+                    <option value="Entre Rios">
+                    <option value="Formosa">
+                    <option value="Jujuy">
+                    <option value="La Pampa">
+                    <option value="La Rioja">
+                    <option value="Mendoza">
+                    <option value="Misiones">
+                    <option value="Neuquen">
+                    <option value="Rio Negro">
+                    <option value="Salta">
+                    <option value="San Juan">
+                    <option value="San Luis">
+                    <option value="Santa Cruz">
+                    <option value="Santa Fe">
+                    <option value="Santiago del Estero">
+                    <option value="Tierra del Fuego">
+                    <option value="Tucuman">
+                </datalist> 
+
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta / Presupuesto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+
+              <section >
                 <input id="button" type="submit">
                 <input id="button" type="reset" value="Borrar">
-            </section>
-        </form>
+                </section>
+        
     </div>
 
     <div class="footer">
