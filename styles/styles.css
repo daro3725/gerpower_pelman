@@ -10,18 +10,20 @@
     max-width: auto;
     justify-content: center;
     background-color: #16a861e8;
+    border-radius: 15px;
 }
 
-.navegador li{
-    justify-content: center;
-    background-color: none;    
+.nav-item{   
     display: inline;
     flex-wrap: wrap;
-    text-align: center;
     border-radius: 10px;
     width: auto;
     height: auto;
     padding: 5px;
+}
+
+#botonNav{
+    background-color: yellowgreen;
 }
 
 .link{
@@ -38,6 +40,7 @@ body{
     background-image: url("../imagenes/609.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .footer{
@@ -74,8 +77,7 @@ body{
 .redesSociales{
 display: flex;
 justify-content: flex-end;
-position: relative;
-top: -50px;
+margin-left: 1100px;
 }
 
 #iconoRedes1{
@@ -106,7 +108,7 @@ top: -50px;
     border-radius: 200px;
 }
 
-h3 {
+h4 {
     display: inline-flex;
     position: relative;
     top: -40px;
@@ -136,11 +138,17 @@ h1 {
     padding: 10px;
 }
 
-.button{
+#button{
     border: #02191d;
     border-radius: 20px;
-    background-color: #0a3e49;
+    background-color: whitesmoke;
+transition: padding 1s;
+}
 
+#button:hover{
+    background-color: blue;
+    color: whitesmoke;
+    padding: 15px;
 }
 
 textarea{
@@ -154,7 +162,7 @@ textarea{
     align-items: center;
     justify-items: center;
     padding-bottom:  40px;
-    max-width: 700px;
+    width: 1000px;
 }
 
 .imagen__titulo:hover{
@@ -187,7 +195,7 @@ header {
     font-size: 50px;
 }
 
-.servitext{
+#servitext{
     max-width: 100%;
     margin: 100px;
     grid-area: servitext;
@@ -285,8 +293,11 @@ header {
 
 .wsp{
     position: fixed;
-    top: 300px;
-    right: 0px;    
+    top: 335px;
+    right: 30px;    
+}
+.wsp:hover{
+transform: scale(1.5);
 }
 .wspImg{
     border-radius: 18px;
@@ -294,7 +305,108 @@ header {
     max-height: 65px;
 }
 
-@media screen and (max-widht: 320px)
+@media screen and (max-width: 576px)
 {
+    .imagen__titulo{
+        padding-bottom:  40px;
+        width: 500px;
+    }
 
+
+header {
+    max-width: 576px;
+    background-color: #0a3e49d1;
+}
+    .footer{
+    max-width: 576px;
+    }
+
+    .redesSociales{
+    margin-left: 110px;
+    }
+    .wsp{
+        position: fixed;
+        top: 295px;
+        right: 10px;    
+    }
+
+    .navegador{
+        text-align: center;
+        max-width: auto;
+        justify-content: center;
+        background-color: #16a861e8;
+        border-radius: 15px;
+    }
+    
+    .nav-item{   
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    .link{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .imagenservicios{
+        grid-area: imagenservicios;
+        max-width: auto;
+        color: white;  
+        background-color: #0a3e49;
+        border-radius: 15px;
+        border: solid greenyellow;    
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "im1 im2"
+        "im3 im4"
+    }
+    .im1{
+        grid-area: im1;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;  
+        border-radius: 15px;
+    }
+    .im2{
+        grid-area: im2;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    .im3{
+        grid-area: im3;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;   
+        border-radius: 15px;
+    }
+    .im4{
+        grid-area: im4;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    #servitext{
+        max-width: 100%;
+        margin: 100px;
+        grid-area: servitext;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #0a3e49;
+        border: solid greenyellow;
+        padding: 10px
+    }
 }

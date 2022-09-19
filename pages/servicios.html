@@ -10,32 +10,60 @@
     <title>Servicios</title>
 </head>
 
-<body>
-    <header>
-        <div class="imagen__titulo"> <img src="../imagenes/GERPOWER LOGO.png" alt="logo de la pagina" width="600px" height="100px"> </div>
-        <h3>Venta - Instalación - Mantenimiento de UPS</h3>
-        <div class="redesSociales">
-            <a href="https://www.linkedin.com/company/gerpowersrl/about/" target="_blank"> <img id="iconoRedes1" src="../imagenes/linkedin.png" alt="imagen linkedin" ></a>
-            <a  href="https://www.facebook.com/gerpowersrl" target="_blank"> <img id="iconoRedes2" src="../imagenes/facebook.png" alt="imagen Facebook"></a>
-            <a href="https://www.instagram.com/gerpowersrl" target="_blank"> <img id="iconoRedes3" src="../imagenes/instagram2.png" alt="imagen Instagram"></a>
-        </div>
-        <nav>
-            <div class="navegador">
-                <ul>
-                    <li><a class="link" href="../index.html">Inicio </a></li>
-                    <li><a class="link" href="./productos.html">Productos </a></li>
-                    <li><a class="link" href="./servicios.html">Servicios </a></li>
-                    <li><a class="link" href="./clientes.html">Clientes </a></li>
-                    <li><a class="link" href="./contacto.html">Contacto </a></li>
-                </ul>        
-            </div>
-        </nav>
+<body class="container fluid">
+    <section class="row">
+        <section class="col-sm-12">
+            <header class="text-center">
+                <div> <img class="imagen__titulo" src="../imagenes/GERPOWER LOGO.png" alt="logo de la pagina"> </div>
+                <h4>Venta - Instalación - Mantenimiento de UPS</h4>
+        </section>
+    </section>
+        <section class="row">
+            <section class="col-sm-12">
+                <div class="redesSociales">
+                    <a href="https://www.linkedin.com/company/gerpowersrl/about/" target="_blank"> <img id="iconoRedes1" src="../imagenes/linkedin.png" alt="imagen linkedin" ></a>
+                    <a href="https://www.facebook.com/gerpowersrl" target="_blank"> <img id="iconoRedes2" src="../imagenes/facebook.png" alt="imagen Facebook"></a>
+                    <a href="https://www.instagram.com/gerpowersrl" target="_blank"> <img id="iconoRedes3" src="../imagenes/instagram2.png" alt="imagen Instagram"></a>
+                </div>
+            </section>
+            <section class="col 9">
+                <nav class="navbar navbar-expand-md position-relative start-50 translate-middle-x">
+                    <div class="container-fluid">
+                            <button id=botonNav class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                             </button>
+
+                         <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navegador">
+                                <li class="nav-item">
+                                    <a class="link" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="clientes.html">Clientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
     </header>
 
+    <section class="row">
+        <section class="col-sm-6">
 
     <main class="mainservicios">    
         <h1 class="serv">Servicios</h1>
-        <div class="servitext">
+        <div id="servitext">
             <p>PJM
             <p>Mantenimiento preventivo y correctivo de UPS</p>
             <p>Recambio de baterías</p>
@@ -44,7 +72,8 @@
             <p>Puesta en valor</p>
             <p>Puesta en marcha Instalación</p>
         </div>
-        
+        </section>
+            <section class="col-sm-6">    
         <div class="imagenservicios">
             <div class="im1">
                 <img src="../imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.13 PM (1).jpeg" alt="foto1" width="100%" height="100%">
@@ -59,7 +88,8 @@
                 <img src="../imagenes/fotos/WhatsApp Image 2022-08-24 at 2.42.14 PM.jpeg" alt="foto4" width="100%" height="100%">
             </div>    
         </div>
-
+</section>
+</section>
     </main>
  
  
