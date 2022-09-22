@@ -1,3 +1,291 @@
-header{
-    background-color: ;
+*{
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@import "./partials/main";
+@import "./partials/header";
+@import "./partials/footer";
+
+h4 {
+    display: inline-flex;
+    position: relative;
+    top: -40px;
+    justify-content: center;
+    color: white;  
+    padding: 10px;
+}
+.redesSociales{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1100px;
+    
+        #iconoRedes1{
+            max-width: 50px;
+            max-height: 50px;
+            border: solid;
+            border-color: #0a3e498d;
+            background-color:white;
+            padding: 5px;
+            border-radius: 200px;
+        }
+        #iconoRedes2{
+            max-width: 50px;
+            max-height: 50px;
+            border: solid;
+            border-color: #0a3e498d;
+            background-color:white;
+            padding: 5px;
+            border-radius: 200px;
+        }
+        #iconoRedes3{
+        max-width: 50px;
+        max-height: 50px;
+        border: solid;
+        border-color: #0a3e498d;
+        background-color:white;
+        padding: 5px;
+        border-radius: 200px;
+        }
+    }
+
+h1 {
+    display: flex;
+    position: center;
+    top: 0px;
+    border:15px;
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;  
+    padding: 20px;
+}
+
+body{
+    background-image: url("../imagenes/609.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.cardForm {
+    background-color: #0a3e498b;
+    width: 600px;
+    border-radius: 100px;
+    text-align: center;
+    color:white;  
+    padding: 10px;
+}
+
+textarea{
+    width: 350px;
+    height: 100px;
+}
+
+.mainservicios{
+    max-width: 1200px;
+    margin: 10px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 5, 1fr;
+    grid-template-areas: 
+    "serv serv none none"
+    "servitext servitext imagenservicios imagenservicios"
+    "servitext servitext imagenservicios imagenservicios";
+}
+
+.serv{
+    grid-area: serv;
+    color: whitesmoke;  
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 50px;
+}
+
+#servitext{
+    max-width: 100%;
+    margin: 100px;
+    grid-area: servitext;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.imagenservicios{
+    grid-area: imagenservicios;
+    max-width: 730px;
+    color: white;  
+    background-color: #0a3e49;
+    border-radius: 15px;
+    border: white solid;    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "im1 im2"
+    "im3 im4"
+}
+.im1{
+    grid-area: im1;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;  
+    border-radius: 15px;
+}
+.im2{
+    grid-area: im2;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.im3{
+    grid-area: im3;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;   
+    border-radius: 15px;
+}
+.im4{
+    grid-area: im4;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.wsp{
+    position: fixed;
+    top: 335px;
+    right: 30px;  
+    &:hover{
+        transform: scale(1.5);
+        }  
+    .wspImg{
+       border-radius: 18px;
+        max-width: 65px;
+        max-height: 65px;
+    }
+}
+
+.boton{
+    border: #02191d;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    transition: padding 1s;
+    &:hover{
+        background-color: blue;
+        color: whitesmoke;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .imagen__titulo{
+        padding-bottom:  40px;
+        width: 500px;
+    }
+
+
+header {
+    max-width: 576px;
+    background-color: #0a3e49d1;
+}
+    .footer{
+    max-width: 576px;
+    }
+
+    .redesSociales{
+    margin-left: 110px;
+    }
+
+    .wsp{
+        position: fixed;
+        top: 295px;
+        right: 10px;    
+    }
+
+    .navegador{
+        text-align: center;
+        max-width: auto;
+        justify-content: center;
+        background-color: #16a861e8;
+        border-radius: 15px;
+    }
+    
+    .nav-item{   
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    .link{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .imagenservicios{
+        grid-area: imagenservicios;
+        max-width: auto;
+        color: white;  
+        background-color: #0a3e49;
+        border-radius: 15px;
+        border: solid greenyellow;    
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "im1 im2"
+        "im3 im4"
+    }
+    .im1{
+        grid-area: im1;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;  
+        border-radius: 15px;
+    }
+    .im2{
+        grid-area: im2;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    .im3{
+        grid-area: im3;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;   
+        border-radius: 15px;
+    }
+    .im4{
+        grid-area: im4;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    #servitext{
+        max-width: 100%;
+        margin: 100px;
+        grid-area: servitext;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #0a3e49;
+        border: solid greenyellow;
+        padding: 10px
+    }
+}
+
+
+
