@@ -1,0 +1,7 @@
+@mixin mainServicios($backgColor, $border) {
+background-color: $backgColor;
+border: $border;
+border-radius: 15px;
+max-width: auto;
+
+}

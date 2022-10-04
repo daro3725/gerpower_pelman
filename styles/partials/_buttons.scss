@@ -1,0 +1,17 @@
+#boton{
+@extend %bottonDefault;
+    &:hover{
+        background-color: blue;
+        color: whitesmoke;
+        padding: 15px;
+    }
+}
+
+#boton2{
+    @extend %bottonDefault;
+        &:hover{
+            background-color: rgb(255, 0, 38);
+            color: whitesmoke;
+            padding: 15px;
+        }
+    }

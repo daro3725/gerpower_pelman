@@ -7,6 +7,9 @@
 @import "./partials/main";
 @import "./partials/header";
 @import "./partials/footer";
+@import "./partials/maps";
+@import "./partials/extends";
+@import "./partials/buttons";
 
 h4 {
     display: inline-flex;
@@ -169,17 +172,7 @@ textarea{
     }
 }
 
-.boton{
-    border: #02191d;
-    border-radius: 20px;
-    background-color: whitesmoke;
-    transition: padding 1s;
-    &:hover{
-        background-color: blue;
-        color: whitesmoke;
-        padding: 15px;
-    }
-}
+
 @media screen and (max-width: 576px)
 {
     .imagen__titulo{
@@ -232,15 +225,12 @@ header {
     }
 
     .imagenservicios{
+        @include mainServicios($backgColor: #0a3e49 , $border:solid rgb(47, 120, 255));
         grid-area: imagenservicios;
-        max-width: auto;
-        color: white;  
-        background-color: #0a3e49;
-        border-radius: 15px;
-        border: solid greenyellow;    
+        color: white;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
         grid-template-areas: 
         "im1 im2"
         "im3 im4"
@@ -274,16 +264,13 @@ header {
         border-radius: 15px;
     }
     #servitext{
-        max-width: 100%;
+        @include mainServicios($backgColor: #0a3e49 , $border:solid greenyellow);
         margin: 100px;
         grid-area: servitext;
         color: white;
         text-align: center;
         justify-content: center;
-        border-radius: 15px;
-        background-color: #0a3e49;
-        border: solid greenyellow;
-        padding: 10px
+        padding: 10px;
     }
 }
 
