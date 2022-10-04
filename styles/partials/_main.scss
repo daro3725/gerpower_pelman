@@ -1,7 +1,7 @@
 .maingrid{
     max-width: 1200px;
     max-height: auto;
-    background-color: rgba(245, 245, 245, 0.307);
+    background-color: map-get($colors, $main);
     justify-content: center;
     align-content: center;
     object-fit: contain;

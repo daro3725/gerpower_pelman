@@ -2,7 +2,7 @@
 
 header {
     max-width: 1200px;
-    background-color: #0a3e49d1;
+    background-color: map-get($colors, primary);
     .imagen__titulo{
         display: inline flex;
         flex-flow: row wrap;
@@ -21,7 +21,7 @@ header {
     display:flex;
     max-width: auto;
     justify-content: center;
-    background-color: #16a861e8;
+    background-color: map-get($colors, $navegador);
     border-radius: 15px;
         .nav-item{   
         display: inline;
@@ -42,5 +42,5 @@ header {
     }
 
 #botonNav{
-background-color: yellowgreen;
+background-color: map-get($colors, $botonNav );
 }  
