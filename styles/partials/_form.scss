@@ -1,0 +1,13 @@
+.cardForm {
+    background-color: map-get($colores ,textoextra);
+    width: 600px;
+    border-radius: 100px;
+    text-align: center;
+    color: map-get($colores, botonNav);
+    padding: 10px;
+}
+
+textarea{
+    width: 350px;
+    height: 100px;
+}

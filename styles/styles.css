@@ -1,7 +1,13 @@
-* {
-  margin: 0px;
-  padding: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+#boton:hover {
+  background-color: blue;
+  color: whitesmoke;
+  padding: 15px;
+}
+
+#boton2:hover {
+  background-color: rgb(255, 0, 38);
+  color: whitesmoke;
+  padding: 15px;
 }
 
 .maingrid {
@@ -64,10 +70,17 @@ header .imagen__titulo:hover {
 
 .footer {
   max-width: 1200px;
-  color: white;
+  color: rgba(22, 168, 97, 0.9098039216);
   background-color: #02191d;
   text-align: center;
   justify-content: center;
+}
+
+#boton, #boton2 {
+  border: #02191d;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  transition: padding 1s;
 }
 
 h4 {
@@ -77,6 +90,148 @@ h4 {
   justify-content: center;
   color: white;
   padding: 10px;
+}
+
+h1 {
+  display: flex;
+  position: center;
+  top: 0px;
+  border: 15px;
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+h2 {
+  display: flex;
+  position: center;
+  border: 15px;
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.cardForm {
+  background-color: rgba(10, 62, 73, 0.5450980392);
+  width: 600px;
+  border-radius: 100px;
+  text-align: center;
+  color: yellowgreen;
+  padding: 10px;
+}
+
+textarea {
+  width: 350px;
+  height: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .imagen__titulo {
+    padding-bottom: 40px;
+    width: auto;
+  }
+  header {
+    max-width: 576px;
+    background-color: rgba(10, 62, 73, 0.8196078431);
+  }
+  .footer {
+    max-width: 576px;
+  }
+  .redesSociales {
+    margin-left: 110px;
+  }
+  .wsp {
+    position: fixed;
+    top: 295px;
+    right: 10px;
+  }
+  .navegador {
+    text-align: center;
+    max-width: auto;
+    justify-content: center;
+    background-color: rgba(22, 168, 97, 0.9098039216);
+    border-radius: 15px;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: auto;
+  }
+  .link {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .imagenservicios {
+    background-color: rgba(10, 62, 73, 0.5450980392);
+    border: 3px solid;
+    border-radius: 15px;
+    max-width: auto;
+    grid-area: imagenservicios;
+    color: white;
+    background-color: rgba(10, 62, 73, 0.5450980392);
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "im1 im2" "im3 im4";
+  }
+  .im1 {
+    grid-area: im1;
+    width: 260px;
+    height: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 15px;
+  }
+  .im2 {
+    grid-area: im2;
+    width: 260px;
+    height: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 15px;
+  }
+  .im3 {
+    grid-area: im3;
+    width: 260px;
+    height: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 15px;
+  }
+  .im4 {
+    grid-area: im4;
+    width: 260px;
+    height: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 15px;
+  }
+  #servitext {
+    background-color: rgba(10, 62, 73, 0.5450980392);
+    border: solid;
+    border-radius: 15px;
+    max-width: auto;
+    margin: 100px;
+    background-color: #0a3e49;
+    grid-area: servitext;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .redesSociales {
@@ -112,35 +267,24 @@ h4 {
   border-radius: 200px;
 }
 
-h1 {
-  display: flex;
-  position: center;
-  top: 0px;
-  border: 15px;
-  text-align: center;
-  justify-content: center;
-  color: whitesmoke;
-  padding: 20px;
+.wsp {
+  position: fixed;
+  top: 335px;
+  right: 30px;
+}
+.wsp:hover {
+  transform: scale(1.5);
+}
+.wsp .wspImg {
+  border-radius: 18px;
+  max-width: 65px;
+  max-height: 65px;
 }
 
 body {
   background-image: url("../imagenes/609.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.cardForm {
-  background-color: rgba(10, 62, 73, 0.5450980392);
-  width: 600px;
-  border-radius: 100px;
-  text-align: center;
-  color: white;
-  padding: 10px;
-}
-
-textarea {
-  width: 350px;
-  height: 100px;
 }
 
 .mainservicios {
@@ -151,14 +295,6 @@ textarea {
   grid-template-columns: 3, 1fr;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "serv serv none none" "servitext servitext imagenservicios imagenservicios" "servitext servitext imagenservicios imagenservicios";
-}
-
-.serv {
-  grid-area: serv;
-  color: whitesmoke;
-  border-radius: 15px;
-  padding: 20px;
-  font-size: 50px;
 }
 
 #servitext {
@@ -221,128 +357,32 @@ textarea {
   border-radius: 15px;
 }
 
-.wsp {
-  position: fixed;
-  top: 335px;
-  right: 30px;
+.mainProductos {
+  max-width: 1200px;
+  margin: 10px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 2 2fr;
+  grid-template-rows: 1 2fr;
+  grid-template-areas: "produText imagenProductos";
 }
-.wsp:hover {
-  transform: scale(1.5);
+.mainProductos .imagenProductos {
+  max-width: 350px;
+  color: white;
+  background-color: rgba(10, 62, 73, 0.8196078431);
+  border-radius: 15px;
+  border: white solid;
 }
-.wsp .wspImg {
-  border-radius: 18px;
-  max-width: 65px;
-  max-height: 65px;
+.mainProductos .imagenProductos .ima1 {
+  max-width: 10rem;
 }
-
-.boton {
-  border: #02191d;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  transition: padding 1s;
-}
-.boton:hover {
-  background-color: blue;
-  color: whitesmoke;
-  padding: 15px;
-}
-
-@media screen and (max-width: 576px) {
-  .imagen__titulo {
-    padding-bottom: 40px;
-    width: 500px;
-  }
-  header {
-    max-width: 576px;
-    background-color: rgba(10, 62, 73, 0.8196078431);
-  }
-  .footer {
-    max-width: 576px;
-  }
-  .redesSociales {
-    margin-left: 110px;
-  }
-  .wsp {
-    position: fixed;
-    top: 295px;
-    right: 10px;
-  }
-  .navegador {
-    text-align: center;
-    max-width: auto;
-    justify-content: center;
-    background-color: rgba(22, 168, 97, 0.9098039216);
-    border-radius: 15px;
-  }
-  .nav-item {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-    padding: auto;
-  }
-  .link {
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .imagenservicios {
-    grid-area: imagenservicios;
-    max-width: auto;
-    color: white;
-    background-color: #0a3e49;
-    border-radius: 15px;
-    border: solid greenyellow;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "im1 im2" "im3 im4";
-  }
-  .im1 {
-    grid-area: im1;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im2 {
-    grid-area: im2;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im3 {
-    grid-area: im3;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im4 {
-    grid-area: im4;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  #servitext {
-    max-width: 100%;
-    margin: 100px;
-    grid-area: servitext;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    border-radius: 15px;
-    background-color: #0a3e49;
-    border: solid greenyellow;
-    padding: 10px;
-  }
+.mainProductos #produText {
+  max-width: 100%;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 100px;
+  background-color: rgba(10, 62, 73, 0.8196078431);
 }/*# sourceMappingURL=styles.css.map */

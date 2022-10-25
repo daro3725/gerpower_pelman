@@ -1,7 +1,6 @@
-@mixin mainServicios($backgColor, $border) {
-background-color: $backgColor;
-border: $border;
+@mixin mainServicio ($border) {
+background-color: map-get($colores, textoextra);
+border: $border ;
 border-radius: 15px;
 max-width: auto;
-
 }

@@ -1,0 +1,106 @@
+@media screen and (max-width: 576px)
+{
+    .imagen__titulo{
+        
+        padding-bottom:  40px;
+        width: auto;
+    }
+
+
+header {
+    max-width: 576px;
+    background-color: #0a3e49d1;
+}
+    .footer{
+    max-width: 576px;
+    }
+
+    .redesSociales{
+    margin-left: 110px;
+    }
+
+    .wsp{
+        position: fixed;
+        top: 295px;
+        right: 10px;    
+    }
+
+    .navegador{
+        text-align: center;
+        max-width: auto;
+        justify-content: center;
+        background-color: #16a861e8;
+        border-radius: 15px;
+    }
+    
+    .nav-item{   
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    .link{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .imagenservicios{
+        @include mainServicio ($border: 03px solid);
+        grid-area: imagenservicios;
+        color: white;
+        background-color: map-get($colores,textoextra);
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        grid-template-areas: 
+        "im1 im2"
+        "im3 im4"
+    }
+    .im1{
+        grid-area: im1;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;  
+        border-radius: 15px;
+    }
+    .im2{
+        grid-area: im2;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    .im3{
+        grid-area: im3;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;   
+        border-radius: 15px;
+    }
+    .im4{
+        grid-area: im4;
+        width: 260px;
+        height: 260px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    #servitext{
+        @include mainServicio($border: solid);
+        margin: 100px;
+        background-color: #0a3e49;
+        grid-area: servitext;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+
+

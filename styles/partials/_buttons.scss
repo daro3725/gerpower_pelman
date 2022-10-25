@@ -1,5 +1,5 @@
 #boton{
-@extend %bottonDefault;
+@extend %buttonDefault;
     &:hover{
         background-color: blue;
         color: whitesmoke;
@@ -8,7 +8,7 @@
 }
 
 #boton2{
-    @extend %bottonDefault;
+    @extend %buttonDefault;
         &:hover{
             background-color: rgb(255, 0, 38);
             color: whitesmoke;
