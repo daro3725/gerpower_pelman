@@ -1,12 +1,18 @@
+#boton {
+  background-color: yellowgreen;
+}
 #boton:hover {
-  background-color: blue;
-  color: whitesmoke;
+  background-color: yellowgreen;
+  color: #02191d;
   padding: 15px;
 }
 
+#boton2 {
+  background-color: yellowgreen;
+}
 #boton2:hover {
-  background-color: rgb(255, 0, 38);
-  color: whitesmoke;
+  background-color: yellowgreen;
+  color: #02191d;
   padding: 15px;
 }
 
@@ -74,12 +80,14 @@ header .imagen__titulo:hover {
   background-color: #02191d;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #boton, #boton2 {
-  border: #02191d;
-  border-radius: 20px;
+  border: rgba(10, 62, 73, 0.8196078431);
+  border-radius: 5px;
   background-color: whitesmoke;
+  padding: 5px;
   transition: padding 1s;
 }
 
@@ -99,6 +107,7 @@ h1 {
   border: 15px;
   text-align: center;
   justify-content: center;
+  font-weight: 200;
   color: whitesmoke;
   padding: 10px;
 }
@@ -109,8 +118,12 @@ h2 {
   border: 15px;
   text-align: center;
   justify-content: center;
-  color: whitesmoke;
+  color: yellowgreen;
   font-style: italic;
+}
+
+h3 {
+  text-decoration: underline;
 }
 
 .cardForm {
@@ -128,9 +141,22 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    max-width: 576px;
+    background-repeat: repeat;
+    background-size: cover;
+  }
   .imagen__titulo {
     padding-bottom: 40px;
-    width: auto;
+    max-width: 400px;
+  }
+  h4 {
+    display: inline-flex;
+    position: relative;
+    top: -20px;
+    justify-content: center;
+    color: white;
+    padding: 10px;
   }
   header {
     max-width: 576px;
@@ -140,23 +166,28 @@ textarea {
     max-width: 576px;
   }
   .redesSociales {
+    position: absolute;
     margin-left: 110px;
+    right: 30px;
   }
-  .wsp {
+  .wspImg {
     position: fixed;
-    top: 295px;
-    right: 10px;
+    top: 100px;
+    right: 20px;
   }
   .navegador {
-    text-align: center;
+    text-align: justify;
     max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     background-color: rgba(22, 168, 97, 0.9098039216);
     border-radius: 15px;
   }
   .nav-item {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     width: auto;
     height: auto;
     padding: auto;
@@ -166,71 +197,21 @@ textarea {
     font-weight: 700;
     font-size: 18px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
-  }
-  .imagenservicios {
-    background-color: rgba(10, 62, 73, 0.5450980392);
-    border: 3px solid;
-    border-radius: 15px;
-    max-width: auto;
-    grid-area: imagenservicios;
-    color: white;
-    background-color: rgba(10, 62, 73, 0.5450980392);
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 40% 40%;
-    grid-template-areas: "im1 im2" "im3 im4";
-  }
-  .im1 {
-    grid-area: im1;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im2 {
-    grid-area: im2;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im3 {
-    grid-area: im3;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  .im4 {
-    grid-area: im4;
-    width: 260px;
-    height: 260px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 15px;
-  }
-  #servitext {
-    background-color: rgba(10, 62, 73, 0.5450980392);
-    border: solid;
-    border-radius: 15px;
-    max-width: auto;
-    margin: 100px;
-    background-color: #0a3e49;
-    grid-area: servitext;
-    color: white;
-    text-align: center;
     justify-content: center;
-    padding: 10px;
   }
 }
+.mainservicios {
+  margin: 3px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 * {
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -285,6 +266,8 @@ body {
   background-image: url("../imagenes/609.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .mainservicios {
@@ -299,90 +282,88 @@ body {
 
 #servitext {
   max-width: 100%;
-  margin: 100px;
+  margin: 150px 0px 10px 0px;
   grid-area: servitext;
   color: white;
   text-align: center;
   justify-content: center;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
+  background-color: rgba(10, 62, 73, 0.5450980392);
 }
 
 .imagenservicios {
   grid-area: imagenservicios;
-  max-width: 730px;
+  max-width: auto;
   color: white;
   background-color: #0a3e49;
   border-radius: 15px;
   border: white solid;
+  gap: 5px;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "im1 im2" "im3 im4";
 }
 
 .im1 {
   grid-area: im1;
-  width: 350px;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 400px;
+  max-height: 350px;
   border-radius: 15px;
 }
 
 .im2 {
   grid-area: im2;
-  width: 350px;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 400px;
+  max-height: 350px;
   border-radius: 15px;
 }
 
 .im3 {
   grid-area: im3;
-  width: 350px;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 400px;
+  max-height: 350px;
   border-radius: 15px;
 }
 
 .im4 {
   grid-area: im4;
-  width: 350px;
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 400px;
+  max-height: 350px;
   border-radius: 15px;
 }
 
 .mainProductos {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 10px;
   display: grid;
-  gap: 2px;
-  grid-template-columns: 2 2fr;
-  grid-template-rows: 1 2fr;
-  grid-template-areas: "produText imagenProductos";
+  gap: 1px;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: textoprod imgprod;
 }
 .mainProductos .imagenProductos {
-  max-width: 350px;
+  grid-area: imgprod;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   color: white;
   background-color: rgba(10, 62, 73, 0.8196078431);
-  border-radius: 15px;
+  border-radius: 20px;
   border: white solid;
 }
-.mainProductos .imagenProductos .ima1 {
-  max-width: 10rem;
+.mainProductos .ima1 {
+  border-radius: 20px;
 }
-.mainProductos #produText {
+.mainProductos .produText {
+  grid-area: textoprod;
   max-width: 100%;
-  margin: 20px;
+  margin: 10px;
   color: white;
   text-align: center;
   justify-content: center;
   border-radius: 15px;
-  padding: 100px;
+  padding: 10px;
   background-color: rgba(10, 62, 73, 0.8196078431);
 }/*# sourceMappingURL=styles.css.map */

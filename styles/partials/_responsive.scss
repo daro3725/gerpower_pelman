@@ -1,12 +1,27 @@
-@media screen and (max-width: 576px)
-{
+@media screen and (max-width: 576px){
+    body{
+        max-width: 576px;
+        background-repeat: repeat;
+        background-size: cover; 
+    }
+
     .imagen__titulo{
-        
         padding-bottom:  40px;
-        width: auto;
+        max-width: 400px;
+    }
+    h4 {
+        display: inline-flex;
+        position: relative;
+        top: -20px;
+        justify-content: center;
+        color: white;  
+        padding: 10px;
     }
 
 
+
+
+    
 header {
     max-width: 576px;
     background-color: #0a3e49d1;
@@ -16,18 +31,23 @@ header {
     }
 
     .redesSociales{
+    position: absolute;
     margin-left: 110px;
+    right: 30px;
     }
 
-    .wsp{
+    .wspImg{
         position: fixed;
-        top: 295px;
-        right: 10px;    
+        top: 100px;
+        right: 20px;    
     }
 
     .navegador{
-        text-align: center;
+        text-align: justify;
         max-width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
         background-color: #16a861e8;
         border-radius: 15px;
@@ -35,7 +55,7 @@ header {
     
     .nav-item{   
         display: flex;
-        flex-direction: row;
+        flex-wrap: nowrap;
         width: auto;
         height: auto;
         padding: auto;
@@ -46,61 +66,13 @@ header {
         font-weight: 700;
         font-size: 18px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
-    }
-
-    .imagenservicios{
-        @include mainServicio ($border: 03px solid);
-        grid-area: imagenservicios;
-        color: white;
-        background-color: map-get($colores,textoextra);
-        display: grid;
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 40% 40%;
-        grid-template-areas: 
-        "im1 im2"
-        "im3 im4"
-    }
-    .im1{
-        grid-area: im1;
-        width: 260px;
-        height: 260px;
-        object-fit: contain;  
-        border-radius: 15px;
-    }
-    .im2{
-        grid-area: im2;
-        width: 260px;
-        height: 260px;
-        object-fit: contain;
-        border-radius: 15px;
-    }
-    .im3{
-        grid-area: im3;
-        width: 260px;
-        height: 260px;
-        object-fit: contain;   
-        border-radius: 15px;
-    }
-    .im4{
-        grid-area: im4;
-        width: 260px;
-        height: 260px;
-        object-fit: contain;
-        border-radius: 15px;
-    }
-    #servitext{
-        @include mainServicio($border: solid);
-        margin: 100px;
-        background-color: #0a3e49;
-        grid-area: servitext;
-        color: white;
-        text-align: center;
         justify-content: center;
-        padding: 10px;
     }
 }
-
-
+.mainservicios{
+    margin: 3px;
+    max-width: fit-content;
+ }
 

@@ -13,6 +13,7 @@ h1 {
     border:15px;
     text-align: center;
     justify-content: center;
+    font-weight: 200;
     color: whitesmoke;  
     padding: 10px;
 }
@@ -22,8 +23,9 @@ h2{
     border:15px;
     text-align: center;
     justify-content: center;
-    color: whitesmoke;  
+    color: map-get($colores , botonNav );  
     font-style: italic;
-
-
+}
+h3{
+    text-decoration: underline;
 }

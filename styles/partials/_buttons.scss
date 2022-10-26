@@ -1,17 +1,19 @@
 #boton{
+    background-color: map-get($colores , botonNav);
 @extend %buttonDefault;
     &:hover{
-        background-color: blue;
-        color: whitesmoke;
+        background-color: map-get($colores , botonNav);
+        color: map-get($colores, colfooter);
         padding: 15px;
     }
 }
 
 #boton2{
+    background-color: map-get($colores , botonNav);
     @extend %buttonDefault;
         &:hover{
-            background-color: rgb(255, 0, 38);
-            color: whitesmoke;
+            background-color:map-get($colores ,botonNav );
+            color: map-get($colores, colfooter);
             padding: 15px;
         }
 }
